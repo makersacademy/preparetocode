@@ -1,0 +1,235 @@
+<header class="wow fadeInDown  header">
+  <% link_to "../../index.html" do %>
+    <i class="fa fa-home"></i>
+  <% end %>
+  <h1 class="header__h1">
+    Rails Set Up
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <% link_to "http://facebook.com" do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <% link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
+<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="row item active bg-green">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Introduction: What's Atom ?</h2>
+          <p>
+            Atom is a text editor that simplify your life.
+          <br>
+            Basicaly it is like <a href="https://www.sublimetext.com/3">sublime text</a> but it comes with more packages
+          <br>
+            And it is easier to use
+          <br>
+            The big + ... It has been made by GitHub
+          <br>
+            It mades the interaction optimale!
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'atomlogo.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-orange">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Second step: Install the DMG !</h2>
+          <p>
+            Got to this URL
+          <br>
+            <span class="step__boxes step__boxes--instructions"><a href="https://atom.io/">Atom.io</a></span>
+          <br>
+              And click on the download button
+          <br>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step1.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Third step: Open the package</h2>
+          <p>
+            Click on
+            <span class="step__boxes step__boxes--instructions">Open When Done</span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step2.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <% link_to "vim.html" , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step3.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <% link_to "vim.html" , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step4.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <% link_to "vim.html" , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step5.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <% link_to "vim.html" , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step6.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <% link_to "vim.html" , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step7.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Drag it!</h2>
+          <p>
+            Put the application in your Application folder
+          </p>
+          <% link_to "vim.html" , :class => 'step__next' do %>
+            Install VIM <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-rails-step8.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
