@@ -3,7 +3,7 @@
     <i class="fa fa-home"></i>
   <% end %>
   <h1 class="header__h1">
-    Heroku &amp; Git Set Up
+    Heroku
   </h1>
   <span class="header__socials">
     <span class="header__share">
@@ -46,7 +46,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'linux-heroku-step1.png', :class => 'step__image' %>
+          <%= image_tag 'herokulogo.jpg', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -54,15 +54,38 @@
     <div class="row item bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install the toolbelt</h2>
+          <h2>First step: Find the toolbelt</h2>
           <p>
             Go to this website:
             <br>
           <span class="step__boxes step__boxes--instructions">
-            <a href="https://toolbelt.heroku.com/osx">https://toolbelt.heroku.com/osx</a>
+            <a href="https://toolbelt.heroku.com/debian">https://toolbelt.heroku.com/debian</a>
           </span>
-          <br>
-            Download the package
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-heroku-step1.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Second step: Install the toolbelt</h2>
+          <p>
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+            </span>
+            <br>
+            Write your password
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -79,86 +102,24 @@
     <div class="row item bg-blue">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Open the package</h2>
+          <h2>Third step: Connect to the beast</h2>
           <p>
-            Click on
-            <span class="step__boxes step__boxes--instructions">
-              Open
-            </span>
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-heroku-step3.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-orange">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Third step: Continue the install</h2>
-          <p>
-            Click on
-            <span class="step__boxes step__boxes--instructions">
-              Continue
-            </span>
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-heroku-step3.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-yellow">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Fourth step: Put your password and launch the installation</h2>
-          <p>
-            Fill the input with your password
+            Run:
             <br>
-            And click on
             <span class="step__boxes step__boxes--instructions">
-              Install Software
+              heroku login
             </span>
+            <br>
+            Follow the instructions
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-heroku-step4.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-purple">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Fourth step: Put your password and launch the installation</h2>
-          <p>
-            That's it you are set up for Heroku, Foreman &amp; Git now !
-          </p>
-          <% link_to "../useful/index.html" , :class => 'step__next' do %>
-            Checkout the useful tools <i class="fa fa-angle-double-right"></i>
+          <% link_to "homebrew.html" , :class => 'step__next' do %>
+            Install Linux brew <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'herokulogo.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-heroku-step2.png', :class => 'step__image' %>
         </article>
       </div>
     </div>

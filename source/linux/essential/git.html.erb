@@ -32,11 +32,11 @@
     <div class="row item active bg-yellow">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install the Command Line Tools via the terminal</h2>
+          <h2>First step: Let it shine</h2>
           <p>
-            Open your terminal and write this line:
-            <br>
-          <span class="step__boxes step__boxes--code">xcode-select --install</span>
+            Allow your terminal to use git UI theme colors by typing this command:
+          <br>
+          <span class="step__boxes step__boxes--code">git config --global color.ui true</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -45,7 +45,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'xcode-step1.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-git-step1.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -54,13 +54,11 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Install !</h2>
+          <h2>Second step: Connect to the beast</h2>
           <p>
-            Click on
+            In order to connect to github, write this command with your github username
             <br>
-            <span class="step__boxes step__boxes--instructions">"Install"</span>
-            <br>
-            You'll need to wait a bit that the software install itself
+            <span class="step__boxes step__boxes--code">git config --global user.name "Your Name"</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -69,7 +67,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'xcode-step2.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-git-step2.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -77,12 +75,11 @@
 
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Third step: Accept the License Agreement</h2>
+          <h2>Third step: Connect to the beast</h2>
           <p>
-            Click on :
+            In order to connect to github, write this command with your github email address
             <br>
-            <span class="step__boxes step__boxes--instructions">"Agree"</span>
-            <br>
+            <span class="step__boxes step__boxes--code">git config --global user.email "YOUR@EMAIL.com"</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -91,7 +88,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'xcode-step3.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-git-step3.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -100,25 +97,74 @@
     <div class="row item bg-purple">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Fourth step: You're good to go !</h2>
+          <h2>Fourth step: Generate your rsa key</h2>
           <p>
-            Click on:
+            In order to connect via ssh with a secured connexion generate a key with:
             <br>
-            <span class="step__boxes step__boxes--instructions">"Done"</span>
-            <br>
-            And take the next step
+            <span class="step__boxes step__boxes--code">ssh-keygen -t rsa -C "YOUR@EMAIL.com"</span>
           </p>
-          <% link_to "homebrew.html" , :class => 'step__next' do %>
-            Install HomeBrew <i class="fa fa-angle-double-right"></i>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-git-step4.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+
+    <div class="row item bg-green">
+
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fifth step: Add the key to your github account</h2>
+          <p>
+            Run this command and copy the key to your keyboard
+            <span class="step__boxes step__boxes--code">cat ~/.ssh/id_rsa.pub</span>
+            <br>
+            Go to this link and paste your new key
+            <span class="step__boxes step__boxes--instructions"><a href="https://github.com/settings/ssh">https://github.com/settings/ssh</a></span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'gitlogo.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+
+
+    <div class="row item bg-green">
+
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Sixth step: Am I connected?</h2>
+          <p>
+            Run this command that should say you hello personally ;)
+            <br>
+            <span class="step__boxes step__boxes--code">ssh -T git@github.com</span>
+          </p>
+          <% link_to "heroku.html" , :class => 'step__next' do %>
+            Install Heroku <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'xcode-step4.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-git-step3.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
+
+
   </div>
 
   <!-- Controls -->
