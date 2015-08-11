@@ -40,15 +40,19 @@
     <div class="row item active bg-yellow">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install Ruby Version Manager (RVM)</h2>
+          <h2>First step: Install Ruby dependencies</h2>
           <p>
-            Open your terminal and write this line:
-          <span class="step__boxes step__boxes--code">\curl -L https://get.rvm.io | bash -s stable</span>
+            Update your apps
+            <span class="step__boxes step__boxes--code">sudo apt-get update</span>
+            Install the dependencies:
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+            </span>
             <br>
-            Basically RVM helps you to manage the different versions of ruby
-            <br>
-            <br>
-            Now, close your terminal
+            Type your password and hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -66,15 +70,17 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Second step: Say Yes!</h2>
           <p>
-            Open your terminal again and type
+            The terminal will ask you to validate the space that will be used
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
+            Write
+            <span class="step__boxes step__boxes--instructions">Y</span>
             <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            And hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -91,24 +97,15 @@
     <div class="row item bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Third step: Finally ! We will install Ruby !!!</h2>
+          <h2>Third step: Is it finish?</h2>
           <p>
-            To install ruby, run this command:
-            <span class="step__boxes step__boxes--code">rvm use ruby --install --default</span>
+            You can think that it is finish because nothing is happenning on the screen
             <br>
-            It might ask you for your password
-            <br>
-            Once is good, type:
-            <span class="step__boxes step__boxes--code">ruby -v</span>
-            <br>
-            If you get:
-            <span class="step__boxes step__boxes--instructions">ruby 2.2.1 or +</span>
-            <br>
-            your computer speaks now ruby !
+            Wait until you see this screen
           </p>
-          <% link_to "pry.html" , :class => 'step__next' do %>
-            Install PRY <i class="fa fa-angle-double-right"></i>
-          <% end %>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -121,15 +118,23 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Fourth step: Install RVM dependencies</h2>
           <p>
             Open your terminal again and type
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+            </span>
             <br>
-            You should see a message saying
+            The terminal will ask you to validate the space that will be used
             <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            Write
+            <span class="step__boxes step__boxes--instructions">Y</span>
+            <br>
+            And hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -146,15 +151,13 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Fifth step: Curl RVM</h2>
           <p>
-            Open your terminal again and type
+            Curl the last stable version of RVM
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            <span class="step__boxes step__boxes--code">
+              curl -L https://get.rvm.io | bash -s stable
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -171,16 +174,15 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Sixth step: Source it!</h2>
           <p>
-            Open your terminal again and type
+            Use the source command to read &amp; execute the content of /rvm
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
+            <span class="step__boxes step__boxes--code">source ~/.rvm/scripts/rvm</span>
             <br>
-            You should see a message saying
+            Or if it is not working
             <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
-          </p>
+            <span class="step__boxes step__boxes--code">source /home/YOUR COMPUTER NAME/.rvm/scripts/rvm</span>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
           </p>
@@ -196,15 +198,11 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Seventh step: Finally install ruby !</h2>
           <p>
-            Open your terminal again and type
+            Run
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            <span class="step__boxes step__boxes--code">rvm install 2.2.2</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -221,15 +219,15 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Eight step: Use it!</h2>
           <p>
-            Open your terminal again and type
+            Say to your computer which version it should use as a default version.
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
+            <span class="step__boxes step__boxes--code">rvm use 2.2.2 --default</span>
             <br>
-            You should see a message saying
+            Now, check if you have the right version and no error messages
             <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            <span class="step__boxes step__boxes--code">ruby -v</span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -246,124 +244,26 @@
     <div class="row item bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
+          <h2>Nineth step: Ready to find some gem?</h2>
           <p>
-            Open your terminal again and type
+            Now tell to Rubygems to not install the documentation locally for each package.
             <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
+            <span class="step__boxes step__boxes--code">
+              echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+            </span>
+            Install the great bundler with:
+            <span class="step__boxes step__boxes--code">
+              gem install bundler
+            </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <% link_to "git.html" , :class => 'step__next' do %>
+            Install Git <i class="fa fa-angle-double-right"></i>
+          <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <%= image_tag 'linux-ruby-step9.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-red">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
-          <p>
-            Open your terminal again and type
-            <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-ruby-step10.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-red">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
-          <p>
-            Open your terminal again and type
-            <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-ruby-step11.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-red">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
-          <p>
-            Open your terminal again and type
-            <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-ruby-step12.png', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-red">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Second step: Check if everything goes well !</h2>
-          <p>
-            Open your terminal again and type
-            <br>
-            <span class="step__boxes step__boxes--code">type rvm | head -n 1</span>
-            <br>
-            You should see a message saying
-            <br>
-            <span class="step__boxes step__boxes--instructions">rvm is a function</span>
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-ruby-step13.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
