@@ -1,0 +1,152 @@
+/* Carousel sample page for technologies */
+.carousel {
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+
+  &-control.left, .carousel-control.right  {
+    background-image: none!important;
+    background-repeat: repeat-x;
+  }
+}
+
+.step {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 18vh;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 2px #777;
+    -moz-box-shadow: 0 3px 2px #777;
+    box-shadow: 0px 11px 17px rgba(16, 16, 16, 0.51);
+  }
+
+  &__image:after {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 12%;
+    bottom: 0px;
+    width: 80%;
+    max-width: 210px;
+    height: 10px;
+    background: transparent;
+    border-radius: 100px/50px;
+    box-shadow: 0 50px 40px rgba(0,0,0,0.5);
+  }
+  a:hover {
+    color: $red;
+    text-decoration: none;
+  }
+
+  a {
+    color: white;
+  }
+
+  p, h2 {
+    margin-bottom: 40px;
+    display: block;
+    transition: 0.6s all ease;
+    color: $whitetext;
+  }
+
+  &__boxes {
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 2px;
+
+    &--code {
+      background-color: #f4efef;
+      color: #E4745F;
+      width: 70%;
+      word-wrap: break-word;
+      display: inline-block;
+    }
+
+    &--instructions {
+      background-color: #E4745F;
+      color: white;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  &__next, &__next a {
+    padding-left: 30px;
+    padding-right: 20px;
+    border: 1px solid white;
+    width: 43%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    color: black;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 2em;
+    fa-angle-double-right {
+      margin-left: 20px;
+    }
+
+  }
+
+}
+
+.logo__columns {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+.bg-yellow {
+    background-color: $yellow;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-orange {
+    background-color: $orange;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-red {
+    background-color: $red;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-green {
+    background-color: $green;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-purple {
+    background-color: $purple;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-blue {
+    background-color: $blue;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.bg-lightyellow {
+    background-color: $homecream;
+    height: 100%;
+    min-height: 100vh;
+}

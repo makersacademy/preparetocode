@@ -1,0 +1,46 @@
+<header class="wow fadeInDown header essentialtools">
+  <% link_to "../../index.html" do %>
+    <i class="fa fa-home"></i>
+  <% end %>
+  <h1 class="header__h1">
+    Useful tools
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <% link_to "http://facebook.com" do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <% link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
+<div class="row essentialtools">
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--1 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <h3>Iterm</h3>
+      <%= image_tag 'iterm-logo.png', :class => 'logo__columns' %>
+      <%= link_to "Set up Iterm", "iterm.html" %>
+    </div>
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--2 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <h3>Atom</h3>
+      <%= image_tag 'atom-logo.png', :class => 'logo__columns' %>
+      <%= link_to "Set up Atom", "atom.html" %>
+    </div>
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--4 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <h3>Vim</h3>
+      <%= image_tag 'vim-logo.png', :class => 'logo__columns' %>
+      <%= link_to "Set up Vim", "vim.html" %>
+    </div>
+    <div class="wow fadeInUp essentialtools__col essentialtools__col--3 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <h3>Google Chrome</h3>
+      <%= image_tag 'chrome-logo.png', :class => 'logo__columns' %>
+      <%= link_to "Set up Google Chrome", "googlechrome.html" %>
+    </div>
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--6 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <h3>GitBook</h3>
+      <%= image_tag 'gitbook-logo.png', :class => 'logo__columns' %>
+      <%= link_to "Set up Git Book", "gitbook.html" %>
+    </div>
+</div>

@@ -1,0 +1,196 @@
+<header class="wow fadeInDown  header">
+  <% link_to "../../index.html" do %>
+    <i class="fa fa-home"></i>
+  <% end %>
+  <h1 class="header__h1">
+    Homebrew Set Up
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <% link_to "http://facebook.com" do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <% link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
+<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+
+    <div class="row item active bg-red">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>First step: Install Homebrew via the terminal</h2>
+          <p>
+            Open your terminal and write this line:
+          <span class="step__boxes step__boxes--code">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step1.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+<span class=></span>
+    <div class="row item bg-green">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Second step: Press enter !</h2>
+          <p>
+            The instruction<br>
+            <span class="step__boxes step__boxes--instructions">"Press RETURN to continue or any other key to abort"</span>
+            <br>
+            Asks you to hit
+            <br>
+            <span class="step__boxes step__boxes--instructions">"Enter"</span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step2.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+
+    <div class="row item bg-yellow">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Third step: Write your password</h2>
+          <p>
+            Note that you will not see your password typing even with the small bullets
+            <br>
+            <br>
+            Be careful about what you type in ;)
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step3.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+
+    <div class="row item bg-purple">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Let's discover a bit brew ...</h2>
+          <p>
+            Once is good, it should return to the prompt and the last line should be:
+            <br>
+            <span class="step__boxes step__boxes--instructions">"Run `brew help` to get started"</span>
+            <br>
+            The first think we want is checking if our brew is feeling well:
+            <br>
+              <span class="step__boxes step__boxes--code">brew doctor</span>
+            <br>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Check out the next picture <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step4.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fifth step: WTF ?</h2>
+          <p>
+            <br>
+              Basically, it checks all the files related to brew and there symlinks.
+            <br>
+            <br>
+              It will tells you if there is some error and a little help on how to fix input.
+            <br>
+            <br>
+              So, If you have a problem with your computer just checkout it out,
+            <br>
+            <br>
+              The doctor is always TRUE.
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Check out the next picture <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step5.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Sixth step: Always get the last version</h2>
+          <p>
+            <br>
+              In order to get the last version
+            <br>
+              You need to run the update command
+            <br>
+              <span class="step__boxes step__boxes--code">brew update</span>
+            <br>
+          </p>
+          <% link_to "ruby.html" , :class => 'step__next' do %>
+            Install RVM &amp; Ruby <i class="fa fa-angle-double-right"></i>
+          <% end %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'homebrew-step6.jpg', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

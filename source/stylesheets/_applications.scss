@@ -1,0 +1,96 @@
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(254, 242, 216, 0.4);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  color: $whitetext;
+  text-shadow: 1px 1px 1px #6B6464;
+
+  .fa {
+    font-size: 17px;
+    color: $whitetext;
+  }
+
+  .fa-home {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__h1 {
+    font-size: 15px;
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: calc(0% - 27px);
+  }
+
+  &__socials {
+    float: right;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
+  &__share {
+    margin-right: 20px;
+    margin-left: -20px;
+    font-weight: 500;
+  }
+
+  a {
+    margin-right: 20px;
+  }
+}
+
+body, p, span, a, article{
+  font-family: 'robotoregular';
+  font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ralewaybold';
+}
+
+a, a:hover, a:visited, a:focus {
+  text-decoration: none;
+}
+
+
+ .col-xs-15,
+ .col-sm-15,
+ .col-md-15,
+ .col-lg-15 {
+     position: relative;
+     min-height: 1px;
+     padding-right: 10px;
+     padding-left: 10px;
+ }
+ .col-xs-15 {
+     width: 20%;
+     float: left;
+ }
+ @media (min-width: 768px) {
+ .col-sm-15 {
+         width: 20%;
+         float: left;
+     }
+ }
+ @media (min-width: 992px) {
+     .col-md-15 {
+         width: 20%;
+         float: left;
+     }
+ }
+ @media (min-width: 1200px) {
+     .col-lg-15 {
+         width: 20%;
+         float: left;
+     }
+ }

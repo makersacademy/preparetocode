@@ -1,3 +1,28 @@
-<h1>Hello  world</h1>
+<header class="wow fadeInDown header">
+  <h1 class="home__h1--header">
+    Dev Environment Setup
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <% link_to 'http://facebook.com' do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <% link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
+<div class="row home">
+  <h3>
+    Welcome !
+  </h3>
+  <h5>
+    Are you ready to fully set up your environment !?
+  </h5>
+  <div class="home__button">
+    <%= link_to "Let's start !", "pick-your-os/index.html" %>
+  </div>
 
-<%= link_to "mac", "mac/index.html" %>
+</div>

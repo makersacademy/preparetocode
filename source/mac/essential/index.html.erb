@@ -1,0 +1,56 @@
+<header class="wow fadeInDown header essentialtools">
+  <% link_to "../../index.html" do %>
+    <i class="fa fa-home"></i>
+  <% end %>
+  <h1 class="header__h1">
+    Essential tools
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+    <% link_to "http://facebook.com" do %>
+      <i class="fa fa-facebook"></i>
+    <% end %>
+    <% link_to "http://twitter.com" do %>
+      <i class="fa fa-twitter"></i>
+    <% end %>
+  </span>
+</header>
+<div class="row essentialtools">
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--1 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <% link_to "xcode.html" do %>
+        <h3>Xcode</h3>
+        <%= image_tag 'Xcode-original.png', :class => 'logo__columns' %>
+        <span>Set up Xcode</span>
+      <%  end  %>
+    </div>
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--2 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <% link_to "homebrew.html" do %>
+      <h3>Homebrew</h3>
+      <%= image_tag 'Homebrew-Original.png', :class => 'logo__columns' %>
+      <span>Set up Homebrew</span>
+      <%  end  %>
+    </div>
+    <div class="wow fadeInUp essentialtools__col essentialtools__col--3 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <% link_to "ruby.html" do %>
+      <h3>RVM &amp; Ruby</h3>
+      <%= image_tag 'Ruby-original.png', :class => 'logo__columns' %>
+      <span>Set up Ruby</span>
+      <%  end  %>
+    </div>
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--4 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <% link_to "pry.html" do %>
+      <h3>Pry</h3>
+      <%= image_tag 'Pry-original.png', :class => 'logo__columns' %>
+      <span>Set up Pry</span>
+      <% end %>
+    </div>
+    <div class="wow fadeInDown essentialtools__col essentialtools__col--5 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+      <% link_to "heroku.html" do %>
+      <h3>Heroku</h3>
+      <%= image_tag 'Heroku-white.png', :class => 'logo__columns' %>
+      <span>Set up Heroku</span>
+      <% end %>
+    </div>
+</div>

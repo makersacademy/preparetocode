@@ -1,0 +1,21 @@
+{
+  "name": "Prepare To Code",
+  "version": "1.0.0",
+  "authors": [
+    "Makers Engineering <dev@makersacademy.com>"
+  ],
+  "main": [
+    "source/sass/all.scss",
+    "source/javascripts/all.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!source/stylesheets/**",
+    "!source/sass/**",
+    "!source/fonts/**",
+    "!source/images/**",
+    "!source/javascripts/**"
+  ],
+  "dependencies": {}
+}

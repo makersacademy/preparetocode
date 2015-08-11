@@ -1,0 +1,87 @@
+/* 5 columns grid */
+.essentialtools {
+
+  &__col {
+
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    transition: 0.8s all ease-out;
+
+    a {
+      color: white;
+      text-underline: none;
+    }
+
+    &--hover {
+      width:30vw !important;
+    }
+
+    &--other {
+      width: 17.8vw !important;
+    }
+
+    h3 {
+      margin-top: 20vh;
+      color: white;
+    }
+
+    &--1 {
+      background-color: $yellow;
+    }
+
+    &--2 {
+      background-color: $orange;
+    }
+
+    &--3 {
+      background-color: $red;
+    }
+
+    &--4 {
+      background-color: $green;
+    }
+
+    &--5 {
+      background-color: $purple;
+    }
+
+    &--6 {
+      background-color: $blue;
+    }
+  }
+}
+
+.essentialtools .header__h1 {
+  font-size: 15px;
+  display: inline;
+  margin-left: 0 auto !important;
+}
+
+@media (max-width: 992px) {
+  .essentialtools {
+    &__col {
+      height: 60vh !important;
+
+      &--hover {
+        width: 100% !important;
+      }
+
+      &--other {
+        width: 100% !important;
+      }
+    }
+
+    &__col h3 {
+      margin-top: 10%;
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  .essentialtools .header__h1, .header__h1 {
+    float: left;
+    margin-left: 20px;
+  }
+}

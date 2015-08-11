@@ -1,0 +1,28 @@
+.os {
+
+  &__col {
+    height: 100vh;
+    text-align: center;
+    padding-top: 25vh;
+
+    &--1 {
+      background-color: $red;
+    }
+
+    &--2 {
+      background-color: $yellow;
+    }
+
+    &--3 {
+      background-color: $green;
+    }
+
+  }
+
+  a {
+    color: $whitetext;
+    text-decoration: none;
+    font-size: 2em;
+  }
+
+}

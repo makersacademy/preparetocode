@@ -1,0 +1,17 @@
+.windows {
+
+  &__section {
+      margin-top: 20vh;
+      font-size: 24px;
+      color: $whitetext;
+
+      a, li {
+        color: $red;
+      }
+
+      a:hover {
+        color: black;
+      }
+  }
+
+}

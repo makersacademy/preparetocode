@@ -1,2 +1,15 @@
-@charset "utf-8";
-@import "test";
+//@charset "utf-8";
+// required
+@import "variables";
+@import "mixins";
+// files
+@import "applications";
+@import "essentialoruseful";
+@import "home";
+@import "install";
+@import "linux";
+@import "mac";
+@import "os";
+@import "windows";
+@import "bootstrapoveride";
+@import "fonts";
