@@ -34,12 +34,22 @@
     <div class="row item active bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Why Google Chrome ?</h2>
+          <h2>First step: add a new repo and install psql</h2>
           <p>
-              When it comes to development, chrome is the best.
+              Run:
             <br>
-              Got to this URL and download it
-              <span class="step__boxes step__boxes--instructions"><a href="https://www.google.com/chrome/browser/desktop/index.html">Download Chrome</a></span>
+              <span class="step__boxes step__boxes--instructions">
+                sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+              </span>
+              Then:
+            <br>
+              <span class="step__boxes step__boxes--instructions">
+                wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -              </span>
+            <br>
+            Then:
+            <span class="step__boxes step__boxes--instructions">
+              sudo apt-get update
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -48,7 +58,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'linux-psql-step1.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-psql-step1.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -57,12 +67,21 @@
     <div class="row item bg-orange">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Accept the evil conditions</h2>
+          <h2>Second step: Install the common packages</h2>
           <p>
-            Click on
-            <span class="step__boxes step__boxes--instructions">"Accept and Install"</span>
-          <br>
-            Now that google have an access to all of your datas,
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install postgresql-common
+            </span>
+            <br>
+            Write
+            <span class="step__boxes step__boxes--instructions">Y</span>
+            <br>
+            And hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -71,7 +90,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'linux-psql-step2.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-psql-step2.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -80,7 +99,19 @@
         <article class="step">
           <h2>Third step: Open the DMG</h2>
           <p>
-            Click on the downloaded file and open it
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install postgresql-9.3 libpq-dev
+            </span>
+            <br>
+            Write
+            <span class="step__boxes step__boxes--instructions">Y</span>
+            <br>
+            And hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
           </p>
           <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
             Take the next step <i class="fa fa-angle-double-right"></i>
@@ -89,7 +120,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'linux-psql-step3.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-psql-step3.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -97,60 +128,63 @@
     <div class="row item bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Fourth step: Drag it to the app folder</h2>
+          <h2>Fourth step: Create yourself !</h2>
           <p>
-            Everything is in the title,
+            Postgre does not come with a default user so,
             <br>
-            Drag and Drop the app file to the application folder
+            In order to be able to access the db and get some work done
             <br>
-            It works !
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo -u postgres createuser YOURNAME -s
+            </span>
           </p>
-          <% link_to "gitbook.html" , :class => 'step__next' do %>
-            Checkout Gitbook ! <i class="fa fa-angle-double-right"></i>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+            Take the next step <i class="fa fa-angle-double-right"></i>
+          </p>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-psql-step4.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-blue">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fifth step: Create your password</h2>
+          <p>
+            Connect to psql with:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo -u postgres psql
+            </span>
+            <br>
+            Once your inside PSQL/SQL you cqn run SQL code so:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              \password YOURNAME
+            </span>
+            <br>
+            Type your password two times
+            <br>
+            quit
+            <br>
+            <span class="step__boxes step__boxes--code">
+              \q
+            </span>
+          </p>
+          <% link_to "mysql.html" , :class => 'step__next' do %>
+            Wish an another db? <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'linux-psql-step4.jpg', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-blue">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Third step: Open the DMG</h2>
-          <p>
-            Click on the downloaded file and open it
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-psql-step5.jpg', :class => 'step__image' %>
-        </article>
-      </div>
-    </div>
-
-    <div class="row item bg-blue">
-      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <h2>Third step: Open the DMG</h2>
-          <p>
-            Click on the downloaded file and open it
-          </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
-        </article>
-      </div>
-      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <article class="step">
-          <%= image_tag 'linux-psql-step6.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-psql-step5.png', :class => 'step__image' %>
         </article>
       </div>
     </div>

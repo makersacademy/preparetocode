@@ -29,16 +29,17 @@
     <div class="row item active bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Register to GitBook</h2>
+          <h2>First &amp; Last step: DL MySQL packages</h2>
           <p>
-              When it comes to development, chrome is the best.
-            <br>
-              Got to this URL and download it
-              <span class="step__boxes step__boxes--instructions"><a href="https://www.google.com/chrome/browser/desktop/index.html">Download Chrome</a></span>
+            Run :
+          <br>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install mysql-server mysql-client libmysqlclient-dev
+            </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <% link_to "index.html" , :class => 'step__next' do %>
+            Checkout the other useful tools <i class="fa fa-angle-double-right"></i>
+          <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
