@@ -1,53 +1,19 @@
-<header class="wow fadeInDown  header">
-  <% link_to "../../index.html" do %>
-    <i class="fa fa-home"></i>
-  <% end %>
-  <h1 class="header__h1">
-    Homebrew Set Up
-  </h1>
-  <span class="header__socials">
-    <span class="header__share">
-      SHARE
-    </span>
-    <% link_to "http://facebook.com" do %>
-      <i class="fa fa-facebook"></i>
-    <% end %>
-    <% link_to "http://twitter.com" do %>
-      <i class="fa fa-twitter"></i>
-    <% end %>
-  </span>
-</header>
-<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-
+<%= partial(:'partials/header', :locals => { :title => "Linuxbrew Set Up" }) %>
+<%= partial(:'partials/startcarousel', :locals => { :iterator => 6 }) %>
     <div class="row item active bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install Homebrew via the terminal</h2>
+          <h2>First step: Install Linuxbrew via the terminal</h2>
           <p>
             Open your terminal and write this line:
-          <span class="step__boxes step__boxes--code">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span>
+          <span class="step__boxes step__boxes--code">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"</span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'homebrew-step1.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-linuxbrew-1.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -56,23 +22,20 @@
     <div class="row item bg-green">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Second step: Press enter !</h2>
+          <h2>Second step: install the dependencies</h2>
           <p>
-            The instruction<br>
-            <span class="step__boxes step__boxes--instructions">"Press RETURN to continue or any other key to abort"</span>
+            Run:
             <br>
-            Asks you to hit
-            <br>
-            <span class="step__boxes step__boxes--instructions">"Enter"</span>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+            </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'homebrew-step2.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-linuxbrew-2.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -81,21 +44,19 @@
     <div class="row item bg-yellow">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Third step: Write your password</h2>
+          <h2>Third step: Say Yes !</h2>
           <p>
-            Note that you will not see your password typing even with the small bullets
-            <br>
-            <br>
-            Be careful about what you type in ;)
+          Simply type :
+          <span class="step__boxes step__boxes--instructions">
+            Y
+          </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'homebrew-step3.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-linuxbrew-3.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -104,25 +65,28 @@
     <div class="row item bg-purple">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Fourth step: Let's discover a bit brew ...</h2>
+          <h2>Fourth step: What the Path?</h2>
           <p>
-            Once is good, it should return to the prompt and the last line should be:
+              Ok, you've got all the packages, but your computer doesn't know where to look.
             <br>
-            <span class="step__boxes step__boxes--instructions">"Run `brew help` to get started"</span>
+              If you try to run a brew command right now, it will say
+            <span class="step__boxes step__boxes--instructions">brew command not found</span>
             <br>
-            The first think we want is checking if our brew is feeling well:
+              You need to copy those lines in your .bashrc
             <br>
-              <span class="step__boxes step__boxes--code">brew doctor</span>
+              <span class="step__boxes step__boxes--code">
+                export PATH="$HOME/.linuxbrew/bin:$PATH"
+                export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+                export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+              </span>
             <br>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Check out the next picture <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'homebrew-step4.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-linuxbrew-4.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -130,7 +94,7 @@
     <div class="row item bg-blue">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>Fifth step: WTF ?</h2>
+          <h2>Fifth step: Your system is ready to brew !</h2>
           <p>
             <br>
               Basically, it checks all the files related to brew and there symlinks.
@@ -151,7 +115,7 @@
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'homebrew-step5.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-linuxbrew-5.png', :class => 'step__image' %>
         </article>
       </div>
     </div>
@@ -161,36 +125,24 @@
         <article class="step">
           <h2>Sixth step: Always get the last version</h2>
           <p>
+            Run the epic command that will save you during all your developer life!
             <br>
-              In order to get the last version
+              <span class="step__boxes step__boxes--code">brew doctor</span>
             <br>
-              You need to run the update command
+            Don't forget to :
             <br>
-              <span class="step__boxes step__boxes--code">brew update</span>
+            <span class="step__boxes step__boxes--code">brew update</span>
             <br>
+            Before installing anything
           </p>
-          <% link_to "ruby.html" , :class => 'step__next' do %>
-            Install RVM &amp; Ruby <i class="fa fa-angle-double-right"></i>
+          <% link_to "node.html" , :class => 'step__next' do %>
+            Install Node <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'homebrew-step6.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-linuxbrew-6.png', :class => 'step__image' %>
         </article>
       </div>
-    </div>
-
-
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<%= partial "partials/endcarousel" %>

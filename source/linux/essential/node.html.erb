@@ -1,63 +1,75 @@
-<header class="wow fadeInDown  header">
-  <% link_to "../../index.html" do %>
-    <i class="fa fa-home"></i>
-  <% end %>
-  <h1 class="header__h1">
-    Pry Set Up
-  </h1>
-  <span class="header__socials">
-    <span class="header__share">
-      SHARE
-    </span>
-    <% link_to "http://facebook.com" do %>
-      <i class="fa fa-facebook"></i>
-    <% end %>
-    <% link_to "http://twitter.com" do %>
-      <i class="fa fa-twitter"></i>
-    <% end %>
-  </span>
-</header>
-<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="row item active bg-orange">
+<%= partial(:'partials/header', :locals => { :title => "Node.js Set Up" }) %>
+<%= partial(:'partials/startcarousel', :locals => { :iterator => 3 }) %>
+    <div class="row item active bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <h2>First step: Install PRY</h2>
+          <h2>First step: Brew install</h2>
           <p>
-            PRY is console or debbuger that will helps on your everyday life.
-            <br>
-            To install it, run:
-          <span class="step__boxes step__boxes--code">gem install pry</span>
-            <br>
-            That's all !
+            In order to get Node simply run:
+          <span class="step__boxes step__boxes--code">
+            brew install node
+          </span>
           </p>
-          <% link_to "heroku.html" , :class => 'step__next' do %>
-            Install Heroku &amp; Github <i class="fa fa-angle-double-right"></i>
+          <%= partial "partials/nextstep" %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-node-1.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+    <div class="row item bg-green">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Second step: Wait for it!</h2>
+          <p>
+            At this step, the
+            <span class="step__boxes step__boxes--code">
+              make install
+            </span>
+            <br>
+            can take time, just wait until the prompt comes back.
+          </p>
+          <%= partial "partials/nextstep" %>
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <%= image_tag 'linux-node-2.png', :class => 'step__image' %>
+        </article>
+      </div>
+    </div>
+
+
+    <div class="row item bg-yellow">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Third step: Check if evrything is good !</h2>
+          <p>
+          Run
+          <br>
+          <span class="step__boxes step__boxes--instructions">
+            node -v
+          </span>
+          <br>
+          And
+          <br>
+          <span class="step__boxes step__boxes--instructions">
+            npm -v
+          </span>
+          <br>
+          If you can see the version and no errors messages, go coding !
+          </p>
+          <% link_to "../useful/index.html" , :class => 'step__next' do %>
+            Checkout the useful tools <i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
-          <%= image_tag 'pry-step1.jpg', :class => 'step__image' %>
+          <%= image_tag 'linux-node-3.png', :class => 'step__image' %>
         </article>
       </div>
-    </div>
-
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<%= partial "partials/endcarousel" %>

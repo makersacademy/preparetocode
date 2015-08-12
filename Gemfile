@@ -18,7 +18,9 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 
 group :development, :test do
+  gem "rake"
   gem 'pry'
+  gem 'capybara'
   gem 'rspec'
   gem 'sass'
 end

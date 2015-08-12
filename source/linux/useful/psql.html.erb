@@ -1,36 +1,5 @@
-<header class="wow fadeInDown  header">
-  <% link_to "../../index.html" do %>
-    <i class="fa fa-home"></i>
-  <% end %>
-  <h1 class="header__h1">
-    Posgre SQL Set Up
-  </h1>
-  <span class="header__socials">
-    <span class="header__share">
-      SHARE
-    </span>
-    <% link_to "http://facebook.com" do %>
-      <i class="fa fa-facebook"></i>
-    <% end %>
-    <% link_to "http://twitter.com" do %>
-      <i class="fa fa-twitter"></i>
-    <% end %>
-  </span>
-</header>
-<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
+<%= partial(:'partials/header', :locals => { :title => "Posgre SQL Set Up" }) %>
+<%= partial(:'partials/startcarousel', :locals => { :iterator => 6 }) %>
     <div class="row item active bg-red">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
@@ -51,9 +20,7 @@
               sudo apt-get update
             </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -83,9 +50,7 @@
               Return
             </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -113,9 +78,7 @@
               Return
             </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -140,9 +103,7 @@
               sudo -u postgres createuser YOURNAME -s
             </span>
           </p>
-          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
-            Take the next step <i class="fa fa-angle-double-right"></i>
-          </p>
+          <%= partial "partials/nextstep" %>
         </article>
       </div>
       <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -189,17 +150,4 @@
       </div>
     </div>
 
-    </div>
-
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<%= partial "partials/endcarousel" %>

@@ -1,46 +1,38 @@
-<header class="wow fadeInDown header essentialtools">
-  <% link_to "../../index.html" do %>
-    <i class="fa fa-home"></i>
-  <% end %>
-  <h1 class="header__h1">
-    Useful tools
-  </h1>
-  <span class="header__socials">
-    <span class="header__share">
-      SHARE
-    </span>
-    <% link_to "http://facebook.com" do %>
-      <i class="fa fa-facebook"></i>
-    <% end %>
-    <% link_to "http://twitter.com" do %>
-      <i class="fa fa-twitter"></i>
-    <% end %>
-  </span>
-</header>
+<%= partial(:'partials/header', :locals => { :title => "Useful tools" }) %>
 <div class="row essentialtools">
-    <div class="wow fadeInDown essentialtools__col essentialtools__col--1 col-lg-15 col-md-15 col-sm-12 col-xs-12">
-      <h3>Rails</h3>
-      <%= image_tag 'iterm-logo.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Rails", "rails.html" %>
-    </div>
-    <div class="wow fadeInDown essentialtools__col essentialtools__col--2 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+  <div class="wow fadeInUp essentialtools__col essentialtools__col--3 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+    <% link_to "Rails.html" do %>
+    <h3>Rails</h3>
+    <%= image_tag 'logo-rails.png', :class => 'logo__columns' %>
+    <span>Set up Rails</span>
+    <%  end  %>
+  </div>
+  <div class="wow fadeInDown essentialtools__col essentialtools__col--1 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+    <% link_to "psql.html" do %>
       <h3>Postgre SQL</h3>
-      <%= image_tag 'atom-logo.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Psql", "psql.html" %>
-    </div>
-    <div class="wow fadeInDown essentialtools__col essentialtools__col--4 col-lg-15 col-md-15 col-sm-12 col-xs-12">
-      <h3>Vim</h3>
-      <%= image_tag 'vim-logo.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Vim", "vim.html" %>
-    </div>
-    <div class="wow fadeInUp essentialtools__col essentialtools__col--3 col-lg-15 col-md-15 col-sm-12 col-xs-12">
-      <h3>Sublime text 3</h3>
-      <%= image_tag 'chrome-logo.png', :class => 'logo__columns' %>
-      <%= link_to "Set up Sublime Text 3", "subl.html" %>
-    </div>
-    <div class="wow fadeInDown essentialtools__col essentialtools__col--6 col-lg-15 col-md-15 col-sm-12 col-xs-12">
-      <h3>MySQL</h3>
-      <%= image_tag 'gitbook-logo.png', :class => 'logo__columns' %>
-      <%= link_to "Set up MySQL", "mysql.html" %>
-    </div>
+      <%= image_tag 'logo-psql.png', :class => 'logo__columns' %>
+      <span>Set up PSQL</span>
+    <%  end  %>
+  </div>
+  <div class="wow fadeInDown essentialtools__col essentialtools__col--4 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+    <% link_to "vim.html" do %>
+    <h3>VIM</h3>
+    <%= image_tag 'logo-vim.png', :class => 'logo__columns' %>
+    <span>Set up VIM</span>
+    <% end %>
+  </div>
+  <div class="wow fadeInDown essentialtools__col essentialtools__col--2 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+    <% link_to "sublime.html" do %>
+    <h3>Sublime text</h3>
+    <%= image_tag 'logo-sublime-text-3.png', :class => 'logo__columns' %>
+    <span>Set up Sublime</span>
+    <%  end  %>
+  </div>
+  <div class="wow fadeInDown essentialtools__col essentialtools__col--5 col-lg-15 col-md-15 col-sm-12 col-xs-12">
+    <% link_to "mysql.html" do %>
+    <h3>MySQL</h3>
+    <%= image_tag 'logo-mysql.png', :class => 'logo__columns' %>
+    <span>Set up MYSQL</span>
+    <% end %>
+  </div>
 </div>

@@ -1,0 +1,10 @@
+<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% iterator.times do |n|%>
+      <li data-target="#carousel-example-generic" data-slide-to="<%= n %>"></li>
+    <% end %>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
