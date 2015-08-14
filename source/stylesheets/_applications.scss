@@ -5,13 +5,12 @@
   height: 40px;
   position: absolute;
   z-index: 99;
-  background-color: rgba(254, 242, 216, 0.4);
+  background-color: rgba(254, 242, 216, 0.2);
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 10px;
-  color: $whitetext;
-  text-shadow: 1px 1px 1px #6B6464;
-
+  color: white;
+  
   .fa {
     font-size: 17px;
     color: $whitetext;

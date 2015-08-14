@@ -5,6 +5,34 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  &__container {
+    width: 440px;
+    margin: 0 auto;
+    top: 30vh;
+    position: relative;
+    color: $homecream;
+    text-align: center;
+    background: rgba(255,255,255, 0.3);
+    padding: 20px;
+
+    a {
+      color: $red;
+      width: 126px;
+      margin: 0 auto;
+      position: relative;
+      display: block;
+      font-size: 18px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: $homecream;
+      text-decoration: none;
+      @include transition(all 600ms ease-out);
+    }
+
+  }
+
   &__h1--header {
     font-size: 15px;
     display: inline-block;
@@ -13,46 +41,20 @@
     text-align: center;
     margin-right: calc(0% - 117px);
     text-shadow: 1px 1px 1px #6B6464;
+
   }
 
   h3 {
     font-size: 38px;
   }
 
-  h3, h5 {
-    width: 440px;
-    margin: 0 auto;
-    top: 30vh;
-    position: relative;
-    color: $homecream;
-    text-align: center;
-  }
-
   h5 {
-    padding-top: 40px;
+    padding-top: 10px;
     font-size: 24px;
     text-align: center;
+    padding-bottom: 20px;
   }
 
-  a {
-    color: $red;
-    width: 126px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    font-size: 18px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: $homecream;
-    top: 40vh;
-    text-decoration: none;
-    transition: all 600ms ease-out;
-    -webkit-transition: all 600ms ease-out;
-      -moz-transition: all 600ms ease-out;
-        -o-transition: all 600ms ease-out;
-  }
 
   a:hover {
     transition: 0.6 all ease;
