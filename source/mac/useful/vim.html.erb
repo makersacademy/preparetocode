@@ -1,6 +1,6 @@
 <%= partial(:'partials/header', :locals => { :title => "Vim Set Up" }) %>
 <%= partial(:'partials/startcarousel', :locals => { :iterator => 2 }) %>
-    <div class="row item active bg-red">
+    <div class="row <%= bgcolor %> item active">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Introduction: Ahhh ... VIM </h2>
@@ -26,7 +26,7 @@
     </div>
 
 
-    <div class="row item bg-yellow">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Second step: Understanding a bit what's goin on</h2>

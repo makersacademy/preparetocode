@@ -27,7 +27,7 @@ $( document ).ready(function() {
     $('p').fitText(1.2, { minFontSize: '14px', maxFontSize: '26px' });
     $('p.step__next').fitText(1, { minFontSize: '12px', maxFontSize: '62px' });
     $('a.step__next').fitText(1, { minFontSize: '12px', maxFontSize: '62px' });
-    
+
     $('.carousel-control.right').css('background-image', 'none');
     $('.carousel-control').css('width', '3%');
     $('.glyphicon-chevron-left').css({
@@ -55,4 +55,5 @@ $( document ).ready(function() {
       $(this).removeClass('essentialtools__col--other, essentialtools__col--hover');
       $('.essentialtools__col').not($(this)).removeClass('essentialtools__col--other');
   });
+
 });

@@ -1,6 +1,6 @@
 <%= partial(:'partials/header', :locals => { :title => "Posgre SQL Set Up" }) %>
 <%= partial(:'partials/startcarousel', :locals => { :iterator => 6 }) %>
-    <div class="row item active bg-red">
+    <div class="row <%= bgcolor %> item active">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>First step: add a new repo and install psql</h2>
@@ -31,7 +31,7 @@
     </div>
 
 
-    <div class="row item bg-orange">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Second step: Install the common packages</h2>
@@ -59,7 +59,7 @@
         </article>
       </div>
     </div>
-    <div class="row item bg-blue">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Third step: Open the DMG</h2>
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="row item bg-green">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Fourth step: Create yourself !</h2>
@@ -113,7 +113,7 @@
       </div>
     </div>
 
-    <div class="row item bg-blue">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Fifth step: Create your password</h2>

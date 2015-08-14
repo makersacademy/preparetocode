@@ -40,6 +40,8 @@
 #   activate :livereload
 # end
 
+require 'source/helpers/customhelpers'
+helpers CustomHelpers
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

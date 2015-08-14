@@ -1,6 +1,6 @@
 <%= partial(:'partials/header', :locals => { :title => "Homebrew Set Up" }) %>
 <%= partial(:'partials/startcarousel', :locals => { :iterator => 6 }) %>
-    <div class="row item active bg-red">
+    <div class="row <%= bgcolor %> item active">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>First step: Install Homebrew via the terminal</h2>
@@ -19,7 +19,7 @@
     </div>
 
 <span class=></span>
-    <div class="row item bg-green">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Second step: Press enter !</h2>
@@ -42,7 +42,7 @@
     </div>
 
 
-    <div class="row item bg-yellow">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Third step: Write your password</h2>
@@ -63,7 +63,7 @@
     </div>
 
 
-    <div class="row item bg-purple">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Fourth step: Let's discover a bit brew ...</h2>
@@ -89,7 +89,7 @@
       </div>
     </div>
 
-    <div class="row item bg-blue">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Fifth step: WTF ?</h2>
@@ -118,7 +118,7 @@
       </div>
     </div>
 
-    <div class="row item bg-blue">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Sixth step: Always get the last version</h2>

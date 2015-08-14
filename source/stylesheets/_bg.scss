@@ -1,0 +1,41 @@
+.bg {
+
+  height: 100%;
+  min-height: 100vh;
+
+  &-yellow {
+      @extend .bg;
+      background-color: $yellow;
+  }
+
+  &-orange {
+      @extend .bg;
+      background-color: $orange;
+  }
+
+  &-red {
+      @extend .bg;
+      background-color: $red;
+  }
+
+  &-green {
+      @extend .bg;
+      background-color: $green;
+  }
+
+  &-purple {
+      @extend .bg;
+      background-color: $purple;
+  }
+
+  &-blue {
+      @extend .bg;
+      background-color: $blue;
+  }
+
+  &-lightyellow {
+      @extend .bg;
+      background-color: $homecream;
+  }
+
+}

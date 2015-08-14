@@ -1,6 +1,6 @@
 <%= partial(:'partials/header', :locals => { :title => "Iterm2 Set Up" }) %>
 <%= partial(:'partials/startcarousel', :locals => { :iterator => 3 }) %>
-    <div class="row item active bg-purple">
+    <div class="row <%= bgcolor %> item active">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>First step: What's the toolbelt?</h2>
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="row item bg-green">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Second step: Open the package</h2>
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="row item bg-blue">
+    <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
           <h2>Third step: Drag it !</h2>
