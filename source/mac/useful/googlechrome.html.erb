@@ -1,5 +1,6 @@
 <%= partial(:'partials/header', :locals => { :title => "Google Chrome Set Up" }) %>
 <%= partial(:'partials/startcarousel', :locals => { :iterator => 4 }) %>
+
     <div class="row <%= bgcolor %> item active">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
@@ -20,7 +21,6 @@
       </div>
     </div>
 
-
     <div class="row <%= bgcolor %> item">
       <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <article class="step">
@@ -29,7 +29,7 @@
             Click on
             <span class="step__boxes step__boxes--instructions">"Accept and Install"</span>
           <br>
-            Now that google have an access to all of your datas,
+            Now that google have an access to all of your data
           </p>
           <%= partial "partials/nextstep" %>
         </article>
@@ -66,10 +66,10 @@
             <br>
             Drag and Drop the app file to the application folder
             <br>
-            It works !
+            It works
           </p>
           <% link_to "gitbook.html" , :class => 'step__next' do %>
-            Checkout Gitbook ! <i class="fa fa-angle-double-right"></i>
+            Checkout Gitbook<i class="fa fa-angle-double-right"></i>
           <% end %>
         </article>
       </div>
