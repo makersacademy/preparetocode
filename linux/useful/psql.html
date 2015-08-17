@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Middleman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/all.js" type="text/javascript"></script><script src="/javascripts/app.js" type="text/javascript"></script><script src="/javascripts/install.js" type="text/javascript"></script>
+  </head>
+
+  <body id="pjax_container">
+    <header class="wow fadeInDown  header">
+<a href="/">    <i class="fa fa-home"></i>
+</a>  <h1 class="header__h1">
+    Posgre SQL Set Up
+  </h1>
+  <span class="header__socials">
+    <span class="header__share">
+      SHARE
+    </span>
+<a href="http://facebook.com">      <i class="fa fa-facebook"></i>
+</a><a href="http://twitter.com">      <i class="fa fa-twitter"></i>
+</a>  </span>
+</header>
+
+<div id="carousel-example-generic" class="carousel carousel__1 slide" data-interval="false" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="row bg-orange item active">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>First step: add a new repo and install psql</h2>
+          <p>
+              Run:
+            <br>
+              <span class="step__boxes step__boxes--instructions">
+                sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+              </span>
+              Then:
+            <br>
+              <span class="step__boxes step__boxes--instructions">
+                wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -              </span>
+            <br>
+            Then:
+            <span class="step__boxes step__boxes--instructions">
+              sudo apt-get update
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+  Take the next step <i class="fa fa-angle-double-right"></i>
+</p>
+
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <img class="step__image" src="/images/linux-psql-step1.png" />
+        </article>
+      </div>
+    </div>
+
+
+    <div class="row bg-yellow item">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Second step: Install the common packages</h2>
+          <p>
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install postgresql-common
+            </span>
+            <br>
+            Write
+            <span class="step__boxes step__boxes--instructions">Y</span>
+            <br>
+            And hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+  Take the next step <i class="fa fa-angle-double-right"></i>
+</p>
+
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <img class="step__image" src="/images/linux-psql-step2.png" />
+        </article>
+      </div>
+    </div>
+    <div class="row bg-green item">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Third step: Open the DMG</h2>
+          <p>
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo apt-get install postgresql-9.3 libpq-dev
+            </span>
+            <br>
+            Write
+            <span class="step__boxes step__boxes--instructions">Y</span>
+            <br>
+            And hit
+            <span class="step__boxes step__boxes--instructions">
+              Return
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+  Take the next step <i class="fa fa-angle-double-right"></i>
+</p>
+
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <img class="step__image" src="/images/linux-psql-step3.png" />
+        </article>
+      </div>
+    </div>
+
+    <div class="row bg-green item">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fourth step: Create yourself !</h2>
+          <p>
+            Postgre does not come with a default user so,
+            <br>
+            In order to be able to access the db and get some work done
+            <br>
+            Run:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo -u postgres createuser YOURNAME -s
+            </span>
+          </p>
+          <p class="step__next" href="#carousel-example-generic" role="button" data-slide="next">
+  Take the next step <i class="fa fa-angle-double-right"></i>
+</p>
+
+        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <img class="step__image" src="/images/linux-psql-step4.png" />
+        </article>
+      </div>
+    </div>
+
+    <div class="row bg-red item">
+      <div class="wow slideInLeft col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <h2>Fifth step: Create your password</h2>
+          <p>
+            Connect to psql with:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              sudo -u postgres psql
+            </span>
+            <br>
+            Once your inside PSQL/SQL you cqn run SQL code so:
+            <br>
+            <span class="step__boxes step__boxes--code">
+              \password YOURNAME
+            </span>
+            <br>
+            Type your password two times
+            <br>
+            quit
+            <br>
+            <span class="step__boxes step__boxes--code">
+              \q
+            </span>
+          </p>
+<a class="step__next" href="/linux/useful/mysql.html">            Wish an another db? <i class="fa fa-angle-double-right"></i>
+</a>        </article>
+      </div>
+      <div class="wow slideInRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <article class="step">
+          <img class="step__image" src="/images/linux-psql-step5.png" />
+        </article>
+      </div>
+    </div>
+
+</div>
+</div>
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+
+
+  </body>
+
+</html>
