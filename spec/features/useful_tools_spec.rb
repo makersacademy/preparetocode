@@ -2,11 +2,11 @@ require 'spec_helper'
 
 feature 'Useful tool page' do
 
-  scenario 'A user can select the Iterm' do
+  scenario 'A user can select the iTerm' do
     visit 'mac/useful/index.html'
-    click_link 'Iterm'
+    click_link 'iTerm'
     expect(current_path).to eq ('/mac/useful/iterm.html')
-    expect(page).to have_content 'Iterm2 Set Up'
+    expect(page).to have_content 'iTerm2 Set Up'
   end
 
   scenario 'A user can select Atom' do
