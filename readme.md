@@ -1,31 +1,33 @@
 [![Stories in Ready](https://badge.waffle.io/makersacademy/dev_environment.png?label=ready&title=Ready)](https://waffle.io/makersacademy/dev_environment)
 
-# Prepare to Code !
+# Prepare to Code!
 
->When you have a new computer, you need to install a bunch of stuff before writting your first line.
-
-So basically what we tried to do here, is to have the most beautiful experience for
-this lame step that you need to pass through.
-
-Follow the steps and after all of them, you'll be fully set up and be able to code.
+[Preparetocode](#) takes the pain out of turning your fresh machine into a modern development environment.  
+After following the steps you'll be set up and ready to code.
 
 # Documentation
-Everything is explain here <>
+TODO
 
-# Contributing
-Fork it
-bundle install
-middleman s
+## How to run locally
+1. Clone this repo
+2. `$ bundle install`
+3. `middleman s`
+
+## How to contribute
+1. Raise an issue
+2. Fork this repo
+3. Create a branch referencing the issue
+4. Push the branch and create a pull request for review
 
 # Technologies
-* Rspec
+* RSpec
 * Capybara
 * Middleman
 * CodeShip
-* Jquery
+* JQuery
 * Fittext
 * Wow
-* bootstrap
+* Twitter Bootstrap
 
 # Authors
 * [Bob](https://github.com/BobRazoswki)
