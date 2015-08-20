@@ -3,10 +3,10 @@ require 'spec_helper'
 
 feature 'Pick Up your OS :' do
 
-  scenario 'I can choose Mac OS' do
+  scenario 'I can choose OS X' do
     visit('/pick-your-os')
     expect(page.status_code).to eq 200
-    click_link('Mac')
+    click_link('OS X')
     expect(page).to have_content('Mac OS Set Up')
   end
 
