@@ -9,7 +9,7 @@
 3. `middleman s`
 
 ## How to contribute
-See what needs to be done by checkingout our [Waffle Board](https://waffle.io/makersacademy/preparetocode) and please look at our [contributing.md](contributing.md) to see how to do it.
+See what needs to be done by checking out our [Waffle Board](https://waffle.io/makersacademy/preparetocode) and please look at our [contributing.md](contributing.md) to see how to do it.
 
 # Technologies
 - RSpec
