@@ -1,3 +1,4 @@
+[![Codeship Status for makersacademy/preparetocode](https://codeship.com/projects/ab604360-274c-0133-6b04-723b2a0a3044/status?branch=master)](https://codeship.com/projects/97340)
 [![Stories in Ready](https://badge.waffle.io/makersacademy/dev_environment.png?label=ready&title=Ready)](https://waffle.io/makersacademy/preparetocode)
 
 # Prepare to Code!
