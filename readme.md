@@ -7,6 +7,9 @@
 ## How to run locally
 1. Clone this repo
 2. `$ bundle install`
+
+- if you get the error 'Could not find celluloid-0.16.1 in any of the sources' when bundling, run `bundle update celluloid`
+
 3. `middleman s`
 
 ## How to contribute
