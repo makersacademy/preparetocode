@@ -2,7 +2,7 @@
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <% iterator.times do |n|%>
-      <li data-target="#carousel-example-generic" data-slide-to="<%= n %>"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="<%= n %>" class="<% if n == 0 %> active <% end %>"</li>
     <% end %>
   </ol>
   <!-- Wrapper for slides -->
